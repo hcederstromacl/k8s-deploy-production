@@ -2,7 +2,7 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: front-end-v1
+  name: front-end-v2
   namespace: production
 spec:
   replicas: 1
@@ -10,7 +10,7 @@ spec:
     metadata:
       labels:
         app: front-end
-        version: v1
+        version: v2
     spec:
       containers:
       - name: front-end
